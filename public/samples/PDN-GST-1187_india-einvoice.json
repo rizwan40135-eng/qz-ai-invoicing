@@ -1,0 +1,44 @@
+{
+  "Version": "1.1",
+  "Irn": "a5c12dca80e743321740b001fd70953e8738d109865d28ba4013750f2046f229",
+  "DocDtls": {
+    "Typ": "INV",
+    "No": "PDN-GST-1187",
+    "Dt": "2027-04-06"
+  },
+  "SellerDtls": {
+    "Gstin": "27AAACP1234F1Z5",
+    "LglNm": "Polaris Data Networks",
+    "Loc": "Pune"
+  },
+  "BuyerDtls": {
+    "Gstin": "27AABCN5678K1Z2",
+    "LglNm": "Nova Global Industries India Pvt Ltd"
+  },
+  "RefDtls": {
+    "PrecDocDtls": [
+      {
+        "InvNo": "PO-45008377"
+      }
+    ]
+  },
+  "ItemList": [
+    {
+      "SlNo": "1",
+      "PrdDesc": "Network Managed Services April",
+      "Qty": 1,
+      "UnitPrice": 250000,
+      "AssAmt": 250000,
+      "GstRt": 18
+    }
+  ],
+  "ValDtls": {
+    "AssVal": 250000,
+    "IgstVal": 45000,
+    "TotInvVal": 295000,
+    "Cur": "INR"
+  },
+  "PayDtls": {
+    "PayTerm": "Net 30"
+  }
+}

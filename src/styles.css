@@ -1,0 +1,227 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Q-AP AI — Quantzig enterprise design system.
+ * Brand: primary blue #0450A1, orange #F1481A, peach #FEEAE5.
+ * Dark: bg #071A2B, card #0D2740, secondary #152F49.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
+  --color-flame: var(--flame);
+  --color-flame-foreground: var(--flame-foreground);
+  --color-flame-soft: var(--flame-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --shadow-card: 0 1px 2px rgba(7, 26, 43, 0.04), 0 8px 24px -12px rgba(7, 26, 43, 0.18);
+  --shadow-pop: 0 12px 40px -12px rgba(7, 26, 43, 0.28);
+  --font-sans: "Inter Tight", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --radius: 1rem;
+  --background: #f7f9fc;
+  --foreground: #0b2033;
+  --surface: #ffffff;
+  --surface-2: #eef3f9;
+  --card: #ffffff;
+  --card-foreground: #0b2033;
+  --popover: #ffffff;
+  --popover-foreground: #0b2033;
+  --primary: #0450a1;
+  --primary-foreground: #ffffff;
+  --secondary: #eaf1f9;
+  --secondary-foreground: #0450a1;
+  --muted: #eef3f9;
+  --muted-foreground: #5c748c;
+  --accent: #feeae5;
+  --accent-foreground: #b8360f;
+  --destructive: #d92d20;
+  --destructive-foreground: #ffffff;
+  --border: #dfe7f1;
+  --input: #dfe7f1;
+  --ring: #0450a1;
+
+  --brand: #0450a1;
+  --brand-foreground: #ffffff;
+  --brand-soft: #e6eefa;
+  --flame: #f1481a;
+  --flame-foreground: #ffffff;
+  --flame-soft: #feeae5;
+
+  --success: #0f8a5f;
+  --success-soft: #e2f5ed;
+  --warning: #b7791f;
+  --warning-soft: #fdf3dd;
+  --danger: #d92d20;
+  --danger-soft: #fdeceb;
+  --info: #0450a1;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0b2033;
+  --sidebar-accent: #e6eefa;
+  --sidebar-border: #dfe7f1;
+
+  --chart-1: #0450a1;
+  --chart-2: #f1481a;
+  --chart-3: #0f8a5f;
+  --chart-4: #7aa7dd;
+  --chart-5: #b7791f;
+}
+
+.dark {
+  --background: #071a2b;
+  --foreground: #e8eff7;
+  --surface: #0d2740;
+  --surface-2: #152f49;
+  --card: #0d2740;
+  --card-foreground: #e8eff7;
+  --popover: #0d2740;
+  --popover-foreground: #e8eff7;
+  --primary: #3d8bdd;
+  --primary-foreground: #04172a;
+  --secondary: #152f49;
+  --secondary-foreground: #cfe2f7;
+  --muted: #152f49;
+  --muted-foreground: #93aac1;
+  --accent: #2a2131;
+  --accent-foreground: #ffb59c;
+  --destructive: #f2564a;
+  --destructive-foreground: #0b1a24;
+  --border: #1d3b57;
+  --input: #1d3b57;
+  --ring: #3d8bdd;
+
+  --brand: #3d8bdd;
+  --brand-foreground: #04172a;
+  --brand-soft: #123354;
+  --flame: #ff6a3d;
+  --flame-foreground: #2a0d04;
+  --flame-soft: #3a1c13;
+
+  --success: #35c38f;
+  --success-soft: #10352b;
+  --warning: #e0a52e;
+  --warning-soft: #3a2f13;
+  --danger: #f2564a;
+  --danger-soft: #3a1618;
+  --info: #3d8bdd;
+
+  --sidebar: #0d2740;
+  --sidebar-foreground: #e8eff7;
+  --sidebar-accent: #152f49;
+  --sidebar-border: #1d3b57;
+
+  --chart-1: #3d8bdd;
+  --chart-2: #ff6a3d;
+  --chart-3: #35c38f;
+  --chart-4: #7aa7dd;
+  --chart-5: #e0a52e;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "tnum";
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+}
+
+@utility panel {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes qap-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@utility ai-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-muted-foreground) 0%,
+    var(--color-brand) 40%,
+    var(--color-flame) 60%,
+    var(--color-muted-foreground) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: qap-shimmer 2.2s linear infinite;
+}

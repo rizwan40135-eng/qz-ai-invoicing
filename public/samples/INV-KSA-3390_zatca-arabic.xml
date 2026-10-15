@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:CustomizationID>urn:zatca:einvoice:standard  فاتورة ضريبية</cbc:CustomizationID>
+  <cbc:UUID>3cf5ee18-ee25-44ea-a444-2c37ba7f28be</cbc:UUID>
+  <cbc:ID>INV-KSA-3390</cbc:ID>
+  <cbc:IssueDate>2027-04-09</cbc:IssueDate>
+  <cbc:DocumentCurrencyCode>SAR</cbc:DocumentCurrencyCode>
+  <cac:OrderReference><cbc:ID>PO-45008366</cbc:ID></cac:OrderReference>
+  <cac:AccountingSupplierParty><cac:Party>
+    <cac:PartyName><cbc:Name>Prime Logistics Solutions</cbc:Name></cac:PartyName>
+    <cac:PartyName><cbc:Name>حلول برايم اللوجستية</cbc:Name></cac:PartyName>
+    <cac:PartyTaxScheme><cbc:CompanyID>310122393500003</cbc:CompanyID></cac:PartyTaxScheme>
+  </cac:Party></cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty><cac:Party><cac:PartyName><cbc:Name>Nova Global Industries</cbc:Name></cac:PartyName></cac:Party></cac:AccountingCustomerParty>
+  <cac:PaymentTerms><cbc:Note>Net 30</cbc:Note></cac:PaymentTerms>
+  <cac:TaxTotal><cbc:TaxAmount currencyID="SAR">514.50</cbc:TaxAmount></cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="SAR">3430.00</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="SAR">3430.00</cbc:TaxExclusiveAmount>
+    <cbc:PayableAmount currencyID="SAR">3944.50</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="EA">30</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="SAR">2550.00</cbc:LineExtensionAmount>
+    <cac:Item><cbc:Name>Warehouse Storage April — تخزين المستودع</cbc:Name></cac:Item>
+    <cac:Price><cbc:PriceAmount currencyID="SAR">85.00</cbc:PriceAmount></cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="EA">40</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="SAR">880.00</cbc:LineExtensionAmount>
+    <cac:Item><cbc:Name>Forklift Handling — مناولة الرافعة</cbc:Name></cac:Item>
+    <cac:Price><cbc:PriceAmount currencyID="SAR">22.00</cbc:PriceAmount></cac:Price>
+  </cac:InvoiceLine>
+</Invoice>
